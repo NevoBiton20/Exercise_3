@@ -105,8 +105,6 @@ int main()
         }
     }  
     while (action!=0);
-
-    printf("exit\n");
     return 0;
 
     
