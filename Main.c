@@ -6,21 +6,6 @@
 #define MAX 500
 #define MAX_WORD 20
 
-StrList* text_to_list(char* str)
-{
-    char* split = strtok(str," ");
-    printf("%s",split);
-    StrList* list = StrList_alloc(split);
-    while(split!=NULL)
-    {
-        printf("%s",split);
-        StrList_insertLast(list,split);
-        split = strtok(NULL," ");
-    }
-    return list;
-}
-
-
 int main()
 {
     char buffer[MAX];
