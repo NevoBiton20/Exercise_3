@@ -1,10 +1,10 @@
 CC=gcc
 FLAGS=-Wall -g
 
-all: Main StrList.o Main.o
+all: StrList StrList.o Main.o
 
-Main: Main.o StrList.o
-	$(CC) $(FLAGS) Main.o StrList.o -o Main
+StrList: Main.o StrList.o
+	$(CC) $(FLAGS) Main.o StrList.o -o StrList
 
 Main.o: Main.c
 	$(CC) $(FLAGS) -c Main.c
