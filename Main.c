@@ -6,6 +6,7 @@
 #define MAX 500
 #define MAX_WORD 20
 
+
 int main()
 {
     char buffer[MAX];
